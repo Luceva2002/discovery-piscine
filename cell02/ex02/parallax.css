@@ -1,0 +1,56 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: pink;
+}
+
+img {
+    width: 100vw; 
+    height: auto; 
+}
+
+.img1 {
+    position: relative;
+}
+
+.img1 img {
+    display: block;
+}
+
+.img1 span {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.img2 {
+    position: relative;
+}
+
+.img2 img {
+    display: block;
+}
+
+.img2 span {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+}

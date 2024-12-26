@@ -1,0 +1,35 @@
+body, html 
+{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+}
+
+table 
+{
+border-collapse:collapse;
+width: 100%;
+height: 100%;
+margin: 0%;
+}
+
+.left
+{
+    background-color: cornflowerblue;
+    justify-content: bottom, left;
+}
+
+.right
+{
+    background-color: pink;
+    justify-content: bottom, left;
+}
+
+div
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+}

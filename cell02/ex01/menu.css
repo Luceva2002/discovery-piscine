@@ -1,0 +1,29 @@
+.menu button
+{
+    background-color: brown ;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+.menu a
+{
+    display: block;
+    color: rgb(83, 10, 10);
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.menu .content
+{
+    position: absolute;
+    background-color: bisque;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px black;
+    display: none;
+}
+
+.menu:hover .content
+{
+    display: block;
+}

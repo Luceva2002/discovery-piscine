@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explode the Balloon</title>
+    <style>
+        
+        #balloon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #balloon {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="balloon-container">
+        <div id="balloon"></div>
+    </div>
+
+    <script>
+        let size = 200;
+        const maxSize = 420;
+        const minSize = 200;
+        let colors = ["green", "red", "blue"];
+        let colorIndex = 0;
+
+        document.getElementById("balloon").onclick = function() {
+            size += 10; 
+
+            if (size > maxSize) {
+                size = minSize; 
+                colorIndex = 0; 
+            }
+
+            this.style.width = size + "px";
+            this.style.height = size + "px";
+            this.style.backgroundColor = colors[colorIndex];
+
+            colorIndex = (colorIndex + 1) % colors.length;
+        };
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backgrooud</title>
+    <link rel="stylesheet" href="backgroound.css">
+
+    <script>
+
+        let i = 0;
+    
+        function sfondo()
+        {
+                i++;
+            if (i == 1)
+                document.getElementById("background").style.backgroundColor = "brown";
+            if (i == 2)
+                document.getElementById("background").style.backgroundColor = "#86ff86f2";
+        }
+    
+    </script>
+
+</head>
+
+<body id="background">
+    
+    <button id="button" onclick=sfondo()>
+        Click!
+    </button>
+
+</body>
+</html>
